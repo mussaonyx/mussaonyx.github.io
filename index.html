@@ -1,215 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
-<body class="w3-light-grey">
+<body>
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-</div>
-  
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1600px">
-
-                    <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>INTRO TO DIGITAL FABRIC</b></h1>
-    <h6>Welcome to the page of <span class="w3-tag">Onyx’s World </span></h6>
-  </header>
-
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="https://s3.amazonaws.com/factmag-images/wp-content/uploads/2015/07/Madvillain240715.jpg"width="1600" height="1060">
-  </header>
-
-  <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
-
-    <!-- Blog entries -->
-    <div class="w3-col l8 s12">
-         <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>HOME</h4>
-            <h4>What do you know about lasers?</h4>
-            <p> Love Life Family Food </p>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-        </ul> <header class="w3-display-container w3-wide" id="home">
-    <img src="https://i.redd.it/wtakbwz16h121.jpg" alt="PROJECT MANAGEMENT" style="width:100%" class="w3-padding-16">
-  </header>
-
-      </div>
-      <hr>
-       <!-- About/Information menu -->
-    <div class="w3-col l4">
-        <h4>
-ABOUT ME 
-</h4>
-      <!-- About Card -->
-      <div class="w3-white w3-margin">
-       <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="data:image/jpeg;base64,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" height="1060">
-  </header>
-
-          <h4>Onyx Mussa</h4>
-          <p> One of my favorite mindsets of learning is being open to as many perspectives as possible. I always love being able to ask questions beyond the surface level to see how people truly feel about their daily lives. I love hearing these opinions and views because I already envision rich plans of using film to show people better ways to spread love through awareness and mystic realism. One of my favorite films to watch during my freetime is “Scarface’ which happened to take place and also be shot in Miami. ‘Scarface” directed by Brian De Palma is a great showcase showing a somewhat realistic view of what crime and drugs impacted the city of Miami during the 80’s. Showing how a refugee from Cuba rose to wealth in prominese through aggressive drug trading and murder is reflective to what the scene of Miami was during the time.  Being able to accurately reflect the lives of any citizen of America and especially the people of Miami if I have the chance too is a prime goal of mine.  I also have an interest in Digital Fabrication and exploring the extent of modern technology.</p>
-        </div>
-      </div>
-      <hr
-        
-      <!-- Blog entry -->
-      
-        <div class="w3-center">
-          <h3>WEEK ONE</h3>
-          <h5>Assignment   <span class="w3-opacity">September 2, 2020</span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="https://html.com/wp-content/uploads/html-hpg-sublime.png" alt="PROJECT MANAGEMENT" style="width:70%" class="w3-padding-16">
-            <div class="w3-justify">
-          <img src="https://pages.github.com/images/code-editor@2x.png" alt="PROJECT MANAGEMENT" style="width:70%" class="w3-padding-16">
-          <p><strong>PROJECT MANAGEMENT</strong> I have some experience with working with code specifically HTML and Python.  Although, I took classes drilling both of those concepts. I constantly confuse vocabulary and functions throughout different programs.  All in all, I found appreciation for coding once I saw all of the creative things that were possible.  While creating this website I was excited to challenge myself in crafting something I could use on a daily basis.  Instead of starting from scratch I decided to use a demo that is an archetype for Fashion blogs.  I was attracted to this specific layout of websites because of the use of pictures and accessibility on the website.  On most websites, there are toolbars that link you to other parts of your website. I like to have a simple layout that keeps everything on one page for the most part. 
-After finding the code that I wanted to edit I started to go through each section of the website first.  It is important to see where the image links are set up and the section titles.  Once I was able to correct the main headings and all of the image lines,  I was able to create my own template.  Since I designed a template that would guide in which sections to edit I started with the top of the site.  I targeted specific parts of code that contained bio text and title.  By editing each section with the same tactics I was able to finish the website with proficiency.
-</p>
-          </b> <span class="w3-tag w3-white">1</span></button></p>
-       
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-            <hr>
-          
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Week TWO 
-</h3>
-          <h5>ASSIGNMENT <span class="w3-opacity"></span></h5>
-        </div>
-
-        <div class="w3-justify">
-        
-          <p><strong></strong> </p>
-          <p></p>
-          
-        
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Week THREE</h3>
-          <h5>ASSIGNMENT <span class="w3-opacity"></span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <p class="w3-left">
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><
-          </div>
-        </div>
-      </div>
-      
-    <!-- END BLOG ENTRIES -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ASSIGNMENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small"></a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
     </div>
-
-    <!-- About/Information menu -->
-    <div class="w3-col l4">
-      <!-- About Card -->
-    <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Week FOUR</h3>
-          <h5>ASSIGNMENT <span class="w3-opacity"></span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <p class="w3-left">
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><
-          </div>
-        </div>
-      </div>
-        <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Week  FIVE </h3>
-          <h5>ASSIGNMENT <span class="w3-opacity"></span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <p class="w3-left">
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><
-          </div>
-        </div>
-      </div>
-            <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>Week SIX</h3>
-          <h5>ASSIGNMENT <span class="w3-opacity"></span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <p class="w3-left">
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><
-          </div>
-        </div>
-      </div>
-      <hr
-      
-
-    <!-- END About/Intro Menu -->
-    </div>
-
-  <!-- END GRID -->
-  </div>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Subscribe Modal -->
-<div id="subscribe" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  </div>
+  <div class="w-3 image">
+    <img src="https://s3.amazonaws.com/factmag-images/wp-content/uploads/2015/07/Madvillain240715.jpg" style="width:100%">
+      <p><b>MADVILLANY</b></p>
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">ABOUT ME </h2>
+    <p class="w3-opacity"><i>ONYX MUSSA</i></p>
+    <p class="w3-justify">
+        One of my favorite mindsets of learning is being open to as many perspectives as possible. I always love being able to ask questions beyond the surface level to see how people truly feel about their daily lives. I love hearing these opinions and views because I already envision rich plans of using film to show people better ways to spread love through awareness and mystic realism. One of my favorite films to watch during my freetime is “Scarface’ which happened to take place and also be shot in Miami. ‘Scarface” directed by Brian De Palma is a great showcase showing a somewhat realistic view of what crime and drugs impacted the city of Miami during the 80’s. Showing how a refugee from Cuba rose to wealth in prominese through aggressive drug trading and murder is reflective to what the scene of Miami was during the time.  Being able to accurately reflect the lives of any citizen of America and especially the people of Miami if I have the chance too is a prime goal of mine.  I also have an interest in Digital Fabrication and exploring the extent of modern technology.</p>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Project Assignment  </h2>
+    <p class="w3-opacity"><i>Week 1</i></p>
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://html.com/wp-content/uploads/html-hpg-sublime.png" alt="Assignment" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://pages.github.com/images/code-editor@2x.png" alt="Assignment" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+    <p class="w3-justify">
+        I have some experience with working with code specifically HTML and Python.  Although, I took classes drilling both of those concepts. I constantly confuse vocabulary and functions throughout different programs.  All in all, I found appreciation for coding once I saw all of the creative things that were possible.  While creating this website I was excited to challenge myself in crafting something I could use on a daily basis.  Instead of starting from scratch I decided to use a demo that is an archetype for Fashion blogs.  I was attracted to this specific layout of websites because of the use of pictures and accessibility on the website.  On most websites, there are toolbars that link you to other parts of your website. I like to have a simple layout that keeps everything on one page for the most part.
+After finding the code that I wanted to edit I started to go through each section of the website first.  It is important to see where the image links are set up and the section titles.  Once I was able to correct the main headings and all of the image lines,  I was able to create my own template.  Since I designed a template that would guide in which sections to edit I started with the top of the site.  I targeted specific parts of code that contained bio text and title.  By editing each section with the same tactics I was able to finish the website with proficiency.</p>
+
+
+            </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="" alt="" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>WEEK 2</b></p>
+            <p class="w3-opacity"></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="" alt="" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>WEEK 3</b></p>
+            <p class="w3-opacity"></p>
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
@@ -217,12 +181,14 @@ function myFunction(id) {
   }
 }
 
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 
 </body>
 </html>
-
